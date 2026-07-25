@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneha Hibare | Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Sneha Hibare, an aspiring AI/ML Engineer specializing in Machine Learning, Deep Learning, and Computer Vision. Explore my projects, experience, and skills.">
+    <!-- Open Graph SEO -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sneha Hibare | Portfolio">
+    <meta property="og:description" content="Explore my projects, work experience, and technical skills.">
+    <meta property="og:image"
+    content="portfolio_assests/sh-logo.png">
+    <link rel="icon" href="portfolio_assests/sh-logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+    
+
+</head>
+
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+
+    <!-- ── Floating Navbar ── -->
+    <nav class="site-nav" id="siteNav">
+        <div class="nav-pill">
+            <span class="nav-indicator" id="navIndicator"></span>
+            <a href="#home" class="nav-link active" data-section="home">
+                <i class="fa-solid fa-house nav-icon"></i>
+                <span class="nav-label">Home</span>
+            </a>
+            <a href="#about" class="nav-link" data-section="about">
+                <i class="fa-solid fa-user nav-icon"></i>
+                <span class="nav-label">About</span>
+            </a>
+            <a href="#experience" class="nav-link" data-section="experience">
+                <i class="fa-solid fa-briefcase nav-icon"></i>
+                <span class="nav-label">Experience</span>
+            </a>
+            <a href="#projects" class="nav-link" data-section="projects">
+                <i class="fa-solid fa-code nav-icon"></i>
+                <span class="nav-label">Projects</span>
+            </a>
+            <a href="#skills" class="nav-link" data-section="skills">
+                <i class="fa-solid fa-layer-group nav-icon"></i>
+                <span class="nav-label">Skills</span>
+            </a>
+            <a href="#certifications" class="nav-link" data-section="certifications">
+                <i class="fa-solid fa-award nav-icon"></i>
+                <span class="nav-label">Certs</span>
+            </a>
+            <a href="#profiles" class="nav-link" data-section="profiles">
+                <i class="fa-solid fa-globe nav-icon"></i>
+                <span class="nav-label">Profiles</span>
+            </a>
+            <a href="#contact" class="nav-link" data-section="contact">
+                <i class="fa-solid fa-envelope nav-icon"></i>
+                <span class="nav-label">Contact</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- ── Preloader: Boot Sequence ── -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-particles" id="preloaderParticles"></div>
+
+        <!-- Branding -->
+        <div class="preloader-brand">
+            <div class="preloader-brand-main">
+                <span class="preloader-brand-name">Sneha</span><span class="preloader-brand-accent">Hibare</span>
+            </div>
+            <div class="preloader-brand-subtitle">
+                <span class="subtitle-line"></span>
+                <span>Portfolio</span>
+                <span class="subtitle-line"></span>
+            </div>
+        </div>
+
+        <!-- Sleek Loading Bar -->
+        <div class="preloader-sleek-track">
+            <div class="preloader-sleek-fill" id="preloaderSleekFill"></div>
+        </div>
+
+        <!-- Cycling Tagline -->
+        <div class="preloader-tagline">
+            <span class="tagline-word" style="--w:0">Perceive.</span>
+            <span class="tagline-word" style="--w:1">Learn.</span>
+            <span class="tagline-word" style="--w:2">Predict.</span>
+            <span class="tagline-word" style="--w:3">Create.</span>
+        </div>
+    </div>
+
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <div class="background-container">
+        <canvas id="bg-canvas"></canvas>
+
+    </div>
+
+    <main class="hero" id="home">
+
+        <div class="floating-icon icon-top-left">
+            <i class="fa-solid fa-code"></i>
+        </div>
+        <div class="floating-icon icon-top-right">
+            <i class="fa-solid fa-brain"></i>
+        </div>
+        <div class="floating-icon icon-bottom-left">
+            <i class="fa-solid fa-trophy"></i>
+        </div>
+        <div class="floating-icon icon-bottom-right">
+            <i class="fa-regular fa-lightbulb"></i>
+        </div>
+
+        <div class="content-wrapper">
+            <h2 class="sub-title">Curious What I've Been Building? Meet </h2>
+            <br>
+            <h1 class="main-title">
+                <span class="purple-text" id="typing-text"></span>
+            </h1>
+            <br>
+            <br>
+            <h5 class="year">Sneha hibare | AIML Undergrad</h5>
+            <br>
+            <div class="hero-buttons">
+                <a href="https://www.linkedin.com/in/sneha-hibare-832038358" target="_blank" class="btn-resume">Let's Connect</a>
+                <a href="javascript:void(0)" id="openResumeBtn" class="btn-resume">View Resume</a>
+            </div>
+        </div>
+    </main>
+
+    <section class="about-section" id="about">
+    <div class="glass-card scroll-reveal">
+        <h2>About Me - <span class="purple-text">Behind The Code!</span></h2>
+        <p>
+            I'm a B.Tech student specializing in Machine Learning, Deep Learning, Computer Vision, and 
+            Generative AI, with a passion for turning data into meaningful insights.
+            I've been building projects that combine technical depth with 
+            real-world impact.
+
+            <br><br>I thrive on learning new technologies and have built several AI projects 
+            from deep learning architectures to generative models , I find it exciting to build systems that can learn from data and make intelligent decisions ,
+            I enjoy taking initiative and work on impactful AI solutions
+        </p>
+    </div>
+</section>
+
+    <br>
+
+    <section class="projects-section" id="experience">
+        <h2 class="section-title">Work Experience - <span class="purple-text">Professional Journey!</span></h2>
+        <br>
+        <div class="timeline">
+            <div class="timeline-line">
+                <div class="timeline-progress"></div>
+            </div>
+
+            <div class="timeline-item left">
+                <div class="timeline-number">01</div>
+                <div class="timeline-content">
+                     <div class="project-tag">Xylofy AI</div>
+                    <img src="portfolio_assests/xylofy_ai_logo.jpg" alt="xylofy AI Logo" class="company-logo">
+                     <h3>AI & Data Science Intern</h3>
+                    <p style="text-align: left; padding: 10px 0;">
+                        • Built an end-to-end Sales Forecasting & Demand Intelligence System, comparing SARIMA, 
+                          Prophet, and XGBoost models on 4 years of retail sales data with full time-series 
+                          decomposition and stationarity testing.<br><br>
+                        • Implemented anomaly detection (Isolation Forest + Z-Score) and K-Means product 
+                          segmentation, then deployed an interactive multi-page Streamlit dashboard with an 
+                          executive business report.
+                    </p>
+                 </div>
+                <div class="timeline-date">JUN 2026 – JUL 2026</div>
+                <div class="timeline-dot"></div>
+</div>
+
+        </div>
+    </section>
+
+    <br>
+
+    <section class="projects-section" id="projects">
+        <h2 class="section-title">Projects Showcase - <span class="purple-text">What I've Built!</span></h2>
+        <br>
+        <div class="experience-grid">
+
+           <div class="experience-card">
+    <div class="experience-date">MAR-2026</div>
+    <div class="project-tag" style="display: inline-block; width: max-content;">Sign Language Translation</div>
+    <h3>ISL Translator</h3>
+    <p>
+        Built an end-to-end real-time Indian Sign Language translation system recognizing 262+ gestures 
+        using LSTM-based sequence models and a MediaPipe hand-landmark pipeline (90% accuracy), with a 
+        FastAPI backend for 100ms inference and integrated Text-to-Speech output, containerized with Docker.
+    </p>
+    <div class="project-links-wrapper">
+        <a href="https://github.com/snehahibare/ISL-translator" target="_blank" class="project-btn primary-btn"><i
+                class="fa-brands fa-github"></i> GitHub</a>
+    </div>
+</div>
+            <div class="experience-card">
+    <div class="experience-date">FEB-2026</div>
+    <div class="project-tag" style="display: inline-block; width: max-content;">Medical Imaging AI</div>
+    <h3>MedScan AI</h3>
+    <p>
+        Developed an AI-powered chest X-ray disease detection system using DenseNet121 on the NIH 
+        ChestX-ray14 dataset (112k+ images), achieving 0.82 mean AUC across 14 disease classes, with 
+        Grad-CAM explainability, MC Dropout uncertainty estimation, and a Streamlit web app with 
+        automated PDF report generation.
+    </p>
+    <div class="project-links-wrapper">
+        <a href="https://github.com/snehahibare/medscan-ai" target="_blank" class="project-btn primary-btn"><i
+                class="fa-brands fa-github"></i> GitHub</a>
+    </div>
+</div>
+
+           <div class="experience-card">
+    <div class="experience-date">JUL-2026</div>
+    <div class="project-tag" style="display: inline-block; width: max-content;">RAG Q&A Assistant</div>
+    <h3>Papyrix</h3>
+    <p>
+        Built an end-to-end RAG system answering questions across multiple research papers with 
+        page-level citations, using a ChromaDB semantic search layer, Groq-hosted Llama 3.3 for 
+        grounded generation, and a LoRA/PEFT fine-tuned embedding model that improved Recall@1 by 1.75%. 
+        Deployed as a multi-paper Streamlit app with live indexing and chat-style Q&A.
+    </p>
+    <div class="project-links-wrapper">
+        <a href="https://papyrix.streamlit.app" target="_blank" class="project-btn primary-btn"><i
+                class="fa-regular fa-eye"></i> View Live</a>
+        <a href="https://github.com/snehahibare/papyrix" target="_blank" class="project-btn primary-btn"><i
+                class="fa-brands fa-github"></i> GitHub</a>
+    </div>
+</div>
+
+            <div class="experience-card">
+    <div class="experience-date">JUL-2K26</div>
+    <div class="project-tag" style="display: inline-block; width: max-content;">LLM Safety Auditing</div>
+    <h3>CortexGuard</h3>
+    <p>
+        Built an automated LLM safety auditing platform testing 275 adversarial prompts across 8 bias 
+        categories using rule-based + LLM-as-judge scoring, catching bias missed by toxicity classifiers 
+        in up to 44% of cases. Implemented a self-improving red-team loop with LlamaIndex retrieval and 
+        auto-remediation, achieving a 90.3% verified bias-fix rate without retraining.
+    </p>
+    <div class="project-links-wrapper">
+        <a href="https://github.com/snehahibare/CortexGuard" target="_blank" class="project-btn primary-btn"><i
+                class="fa-brands fa-github"></i> GitHub</a>
+    </div>
+</div>
+
+        </div>
+    </section>
+
+    <br>
+<section class="skills-section" id="skills">
+    <h2 class="section-title">Technical Skills - <span class="purple-text">Core Expertise!</span></h2>
+
+    <div class="skill-filters" id="skillFilters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="languages">Languages</button>
+        <button class="filter-btn" data-filter="mldl">ML/DL</button>
+        <button class="filter-btn" data-filter="genai">GenAI/LLM</button>
+        <button class="filter-btn" data-filter="cv">Computer Vision</button>
+        <button class="filter-btn" data-filter="tools">Tools</button>
+    </div>
+
+    <div class="skill-grid" id="skillGrid">
+
+        <div class="skill-card" data-category="languages">
+            <i class="fa-brands fa-python" style="color: #3776AB;"></i>
+            <span>Python</span>
+        </div>
+        <div class="skill-card" data-category="languages">
+            <i class="devicon-mysql-plain colored"></i>
+            <span>SQL / MySQL</span>
+        </div>
+        <div class="skill-card" data-category="languages">
+            <i class="devicon-mongodb-plain colored"></i>
+            <span>MongoDB</span>
+        </div>
+        <div class="skill-card" data-category="mldl">
+            <i class="devicon-tensorflow-original colored"></i>
+            <span>TensorFlow</span>
+        </div>
+        <div class="skill-card" data-category="mldl">
+            <i class="devicon-pytorch-original colored"></i>
+            <span>PyTorch</span>
+        </div>
+        <div class="skill-card" data-category="mldl">
+            <i class="fa-solid fa-cubes" style="color: #F7931E;"></i>
+            <span>Scikit-learn</span>
+        </div>
+        <div class="skill-card" data-category="mldl">
+            <i class="fa-solid fa-layer-group" style="color: #D00000;"></i>
+            <span>Keras</span>
+        </div>
+        <div class="skill-card" data-category="mldl">
+            <i class="fa-solid fa-bolt" style="color: #EC5B24;"></i>
+            <span>XGBoost</span>
+        </div>
+        <div class="skill-card" data-category="mldl">
+            <i class="devicon-numpy-original colored"></i>
+            <span>NumPy</span>
+        </div>
+        <div class="skill-card" data-category="mldl">
+            <i class="devicon-pandas-original colored"></i>
+            <span>Pandas</span>
+        </div>
+        <div class="skill-card" data-category="genai">
+            <i class="fa-solid fa-link" style="color: #1C3C3C;"></i>
+            <span>LangChain</span>
+        </div>
+        <div class="skill-card" data-category="genai">
+            <i class="fa-solid fa-database" style="color: #FF6B6B;"></i>
+            <span>ChromaDB</span>
+        </div>
+        <div class="skill-card" data-category="genai">
+            <i class="fa-solid fa-face-smile" style="color: #FFD21E;"></i>
+            <span>Hugging Face</span>
+        </div>
+        <div class="skill-card" data-category="genai">
+            <i class="fa-solid fa-sliders" style="color: #7C3AED;"></i>
+            <span>LoRA/PEFT</span>
+        </div>
+        <div class="skill-card" data-category="genai">
+            <i class="fa-solid fa-magnifying-glass" style="color: #6366F1;"></i>
+            <span>RAG</span>
+        </div>
+        <div class="skill-card" data-category="genai">
+            <i class="fa-solid fa-comments" style="color: #10A37F;"></i>
+            <span>Prompt Engineering</span>
+        </div>
+        <div class="skill-card" data-category="cv">
+            <i class="devicon-opencv-plain colored"></i>
+            <span>OpenCV</span>
+        </div>
+        <div class="skill-card" data-category="cv">
+            <i class="fa-solid fa-eye" style="color: #00FFFF;"></i>
+            <span>YOLO</span>
+        </div>
+        <div class="skill-card" data-category="cv">
+            <i class="fa-solid fa-brain" style="color: #FF6F61;"></i>
+            <span>CNN</span>
+        </div>
+        <div class="skill-card" data-category="cv">
+            <i class="fa-solid fa-hand" style="color: #4285F4;"></i>
+            <span>MediaPipe</span>
+        </div>
+        <div class="skill-card" data-category="tools">
+            <i class="devicon-git-plain colored"></i>
+            <span>Git</span>
+        </div>
+        <div class="skill-card" data-category="tools">
+            <i class="devicon-github-original"></i>
+            <span>GitHub</span>
+        </div>
+        <div class="skill-card" data-category="tools">
+            <i class="fa-solid fa-bolt-lightning" style="color: #009688;"></i>
+            <span>FastAPI</span>
+        </div>
+        <div class="skill-card" data-category="tools">
+            <i class="fa-brands fa-docker" style="color: #2496ED;"></i>
+            <span>Docker</span>
+        </div>
+        <div class="skill-card" data-category="tools">
+            <i class="fa-solid fa-chart-line" style="color: #742774;"></i>
+            <span>Power BI</span>
+        </div>
+        <div class="skill-card" data-category="tools">
+            <i class="fa-solid fa-square-poll-vertical" style="color: #FF6384;"></i>
+            <span>Matplotlib/Seaborn</span>
+        </div>
+
+    </div>
+</section>
+
+    <section class="certifications-section" id="certifications">
+        <h2 class="section-title">Certifications - <span class="purple-text">Learning Milestones!</span></h2>
+
+        <div class="cert-grid">
+
+            <div class="cert-item">
+    <div class="cert-img-wrapper">
+        <img src="portfolio_assests/portfolio_assests/oracle_gen_ai.png" alt="Oracle Cloud Infrastructure Generative AI Professional">
+        <div class="cert-overlay">
+            <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=1AA16F6DA12BB9F0E4F9929F34E30D91E5FC049EE31887B823B60F09CDC96CD9"
+                target="_blank" class="cert-overlay-link">
+                <span>View Credentials</span>
+                <i class="fa-solid fa-arrow-right-long"></i>
+            </a>
+        </div>
+    </div>
+    <div class="cert-info">
+        <h3>Oracle Cloud Infrastructure 2025 Certified Generative AI Professional</h3>
+        <p>Certified in designing and implementing Generative AI solutions on Oracle Cloud Infrastructure (Sep 2025).</p>
+    </div>
+</div>
+
+            <div class="cert-item">
+    <div class="cert-img-wrapper">
+        <img src="portfolio_assests/oracle_ai_fond.png" alt="Oracle Cloud Infrastructure AI Foundations Associate">
+        <div class="cert-overlay">
+            <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=83FE3446F2468F8F49BC7E2DE5CD347D79C65CFB10F905F62FDF786DE6A90A99"
+                target="_blank" class="cert-overlay-link">
+                <span>View Credentials</span>
+                <i class="fa-solid fa-arrow-right-long"></i>
+            </a>
+        </div>
+    </div>
+    <div class="cert-info">
+        <h3>Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</h3>
+        <p>Certified in foundational AI and machine learning concepts on Oracle Cloud Infrastructure (Sep 2025).</p>
+    </div>
+</div>
+
+           <div class="cert-item">
+    <div class="cert-img-wrapper">
+        <img src="portfolio_assests/edunet.png" alt="Green Skills and Artificial Intelligence">
+        <div class="cert-overlay">
+            <a href="https://drive.google.com/file/d/1uCkHOTb5DdWomzRSJQuz9TDgs_4HuuKj/view?usp=drive_link"
+                target="_blank" class="cert-overlay-link">
+                <span>View Credentials</span>
+                <i class="fa-solid fa-arrow-right-long"></i>
+            </a>
+        </div>
+    </div>
+    <div class="cert-info">
+        <h3>Green Skills and Artificial Intelligence</h3>
+        <p>Edunet Foundation (AICTE Skills4Future Program) certification in Green Skills and AI (Jan 2026).</p>
+    </div>
+</div>
+
+        </div>
+    </section>
+
+    <br>
+
+    <section class="profiles-section" id="profiles">
+        <h2 class="section-title">Web Presence - <span class="purple-text">Dev Network!</span></h2>
+       <div class="profile-header">
+    <div class="profile-img-main">
+        <img src="portfolio_assests/sneha_photo.jpg" alt="Sneha Hibare">
+    </div>
+    <div class="profile-text">
+        <p class="purple-text">@snehahibare</p>
+    </div>
+</div>
+
+<div class="profiles-grid">
+
+    <a href="https://www.linkedin.com/in/snehahibare10" target="_blank" class="profile-card">
+        <div class="profile-icon">
+            <i class="fa-brands fa-linkedin" style="color: #0077b5;"></i>
+        </div>
+        <div class="profile-info">
+            <h3>LinkedIn</h3>
+            <p>Connect</p>
+        </div>
+    </a>
+
+    <a href="https://github.com/snehahibare" target="_blank" class="profile-card">
+        <div class="profile-icon">
+            <i class="fa-brands fa-github" style="color: #fff;"></i>
+        </div>
+        <div class="profile-info">
+            <h3>GitHub</h3>
+            <p>Commit</p>
+        </div>
+    </a>
+
+    <a href="https://www.kaggle.com/snehahibare" target="_blank" class="profile-card">
+        <div class="profile-icon">
+            <i class="fa-brands fa-kaggle" style="color: #20beff;"></i>
+        </div>
+        <div class="profile-info">
+            <h3>Kaggle</h3>
+            <p>Explore</p>
+        </div>
+    </a>
+</div>
+<br>
+<p class="profile-note">You can explore further by clicking on any of the profile cards above!</p>
+    </section>
+
+    <br>
+
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <h2 class="section-title">Get In Touch - <span class="purple-text">Ask Me Anything!</span></h2>
+            <h4 class="contact-note">Ready to collaborate or have a project in mind?<br> I'm always open to new
+                opportunities</h4>
+            <div class="contact-card">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder=" " autocomplete="off">
+                        <label for="name">Name</label>
+                        <i class="fa-solid fa-user input-icon"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder=" " autocomplete="off">
+                        <label for="email">Email</label>
+                        <i class="fa-solid fa-envelope input-icon"></i>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
+                        <label for="message">Message</label>
+                        <i class="fa-solid fa-comment input-icon"></i>
+                    </div>
+                    <button type="submit" class="btn-resume btn-submit">
+                        <span>Send Message</span>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <br>
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <h2 class="footer-logo">Sneha<span class="purple-text">Hibare</span></h2>
+<p class="footer-tagline">Turning Data Into Intelligent Solutions!</p>
+            </div>
+
+            <ul class="footer-nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#profiles">Profiles</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="footer-socials">
+    <a href="https://www.linkedin.com/in/snehahibare10" target="_blank" class="social-link linkedin"><i
+            class="fa-brands fa-linkedin"></i></a>
+    <a href="https://github.com/snehahibare" target="_blank" class="social-link github"><i
+            class="fa-brands fa-github"></i></a>
+    <a href="mailto:itshibaresneha@gmail.com" target="_blank" class="social-link email"><i
+            class="fa-solid fa-envelope"></i></a>
+</div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Sneha Hibare. All rights reserved.</p>
+            <button id="backToTop" class="back-to-top" aria-label="Back to Top">
+                <i class="fa-solid fa-arrow-up"></i>
+            </button>
+        </div>
+    </footer>
+
+    <div id="resumeModal" class="resume-modal">
+        <div class="resume-modal-content glass-card">
+            <span class="close-modal" id="closeResumeBtn">&times;</span>
+            <h2 style="margin-bottom: 20px;">My Resume - <span class="purple-text">On Paper!</span></h2>
+            <div class="resume-iframe-container">
+                <iframe src="portfolio_assests/Sneha_Resume.pdf" width="100%" height="100%"
+                   style="border: none;"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="3d_background.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
