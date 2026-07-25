@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     scrollElements.forEach(el => observer.observe(el));
 
     const typingText = document.getElementById('typing-text');
-    const words = ["DEVELOPER", "DESIGNER", "PROGRAMMER", "WRITER", "CODER"];
+    const words = ["BUILDING AI", "TRAINING MODELS", "SOLVING PROBLEMS", "CREATING IMPACT"];
     let wordIndex = 0;
     let charIndex = 0;
     let isDeleting = false;

@@ -1,7 +1,7 @@
 {
-  "name": "devhq-portfolio",
+  "name": "sneha-portfolio",
   "version": "1.0.0",
-  "description": "DevHQ Personal Portfolio Website by Aakarsh Bibhaw",
+  "description": "Personal Portfolio Website by Sneha Hibare",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,17 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arshbibhaw/DevHQ-Personal-Portfolio-Website.git"
+    "url": "git+https://github.com/snehahibare/portfolio.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Sneha Hibare",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/arshbibhaw/DevHQ-Personal-Portfolio-Website/issues"
+    "url": "https://github.com/snehahibare/portfolio/issues"
   },
-  "homepage": "https://github.com/arshbibhaw/DevHQ-Personal-Portfolio-Website#readme",
-  "dependencies": {
-    "@vercel/analytics": "^2.0.1",
-    "@vercel/speed-insights": "^2.0.0"
-  }
+  "homepage": "https://github.com/snehahibare/portfolio#readme"
 }
